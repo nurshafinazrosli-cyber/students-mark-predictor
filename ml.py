@@ -14,7 +14,7 @@ def load_model(model):
         slr = pickle.load(f)
     return slr
 try:
-    model = load_model("slr.pkl") # load the pkl file
+    model = load_model("SLR.pkl") # load the pkl file
 except Exception as e:
     st.error("⭕️ Your pickle file not found.")
     st.exception("❗️ Failed to load file : ", e) # tells the reason of the error.
